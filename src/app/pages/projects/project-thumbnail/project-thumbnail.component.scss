@@ -1,6 +1,35 @@
-img {
-    max-width: 100%;
-}
 mat-card {
     background: none;
+    img {
+        max-width: 100%;
+        display: inline-block;
+    }
+    .mat-card-image {
+        margin-bottom: 0;
+    }
+    .image-wrap {
+        position: relative;
+        h1 {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            background-color: rgba(0,0,0,.5);
+            padding: 1rem;
+        }
+    }
+
+    mat-card-content {
+        text-align: left;
+        color: #474747;
+        background: #fff;
+        padding: 1rem;
+        h5 {
+            color: #CD3266;
+            font-size: 1rem;
+        }
+        h4 {
+            color: #05BF44;
+            font-size: 1rem;
+        }
+    }
 }

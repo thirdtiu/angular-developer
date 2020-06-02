@@ -1,6 +1,15 @@
 <div>
 <mat-card class="mat-elevation-z0">
-    {{ project?.id }}
-    <img [src]="project?.imageUrl" />
+    <div class="image-wrap">
+        <img [src]="project?.imageUrl" mat-card-image />
+        <h1>
+            {{project?.location}}
+        </h1>
+    </div>
+    <mat-card-content>
+        <h5>{{project?.name}}</h5>
+        <h4>{{project?.weight}}</h4>
+        <p>{{project?.description}}</p>
+    </mat-card-content>
 </mat-card>
 </div>
