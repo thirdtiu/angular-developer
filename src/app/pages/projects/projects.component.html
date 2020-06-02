@@ -1,4 +1,7 @@
-<p>projects works!</p>
-<div *ngFor="let project of projects">
-    <app-project-thumbnail [project]="project"></app-project-thumbnail>
+
+<div fxLayout="row wrap" fxLayout.xs="column wrap">
+    <app-project-thumbnail 
+        [project]="project"
+        *ngFor="let project of projects"
+        fxFlex="50"></app-project-thumbnail>
 </div>
